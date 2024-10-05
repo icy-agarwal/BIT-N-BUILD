@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Connect</title>
+    <link rel="stylesheet" href="roshni.css">
+</head>
+<body>
+    <header>
+        <h1>Book Connect</h1>
+        <p class="tagline">Discover, Connect, and Explore Your Local Bookstore</p>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-column" id="customer-column">
+                <h2>Customer</h2>
+                <div class="tabs">
+                    <button class="tab-link active" data-user="customer" data-action="signin">Log In</button>
+                    <button class="tab-link" data-user="customer" data-action="signup">Sign Up</button>
+                </div>
+                <div class="form-container" id="customer-signin">
+                    <form id="customer-login-form">
+                        <label for="cust-login-email">Email</label>
+                        <input type="email" id="cust-login-email" placeholder="Enter your email" required>
+
+                        <label for="cust-login-password">Password</label>
+                        <input type="password" id="cust-login-password" placeholder="Enter your password" required>
+
+                        <button type="submit">Log In</button>
+                    </form>
+                </div>
+                <div class="form-container hidden" id="customer-signup">
+                    <form id="customer-signup-form">
+                        <label for="cust-signup-name">Name</label>
+                        <input type="text" id="cust-signup-name" placeholder="Enter your name" required>
+
+                        <label for="cust-signup-email">Email</label>
+                        <input type="email" id="cust-signup-email" placeholder="Enter your email" required>
+
+                        <label for="cust-signup-password">Password</label>
+                        <input type="password" id="cust-signup-password" placeholder="Create a password" required>
+
+                        <label for="cust-signup-password-confirm">Confirm Password</label>
+                        <input type="password" id="cust-signup-password-confirm" placeholder="Confirm your password" required>
+
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="login-column" id="owner-column">
+                <h2>Bookstore Owner</h2>
+                <div class="tabs">
+                    <button class="tab-link active" data-user="owner" data-action="signin">Log In</button>
+                    <button class="tab-link" data-user="owner" data-action="signup">Sign Up</button>
+                </div>
+                <div class="form-container" id="owner-signin">
+                    <form id="owner-login-form">
+                        <label for="owner-login-email">Email</label>
+                        <input type="email" id="owner-login-email" placeholder="Enter your email" required>
+
+                        <label for="owner-login-password">Password</label>
+                        <input type="password" id="owner-login-password" placeholder="Enter your password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div class="form-container hidden" id="owner-signup">
+                    <form id="owner-signup-form">
+                        <label for="owner-signup-name">Store Name</label>
+                        <input type="text" id="owner-signup-name" placeholder="Enter your store name" required>
+
+                        <label for="owner-signup-email">Email</label>
+                        <input type="email" id="owner-signup-email" placeholder="Enter your email" required>
+
+                        <label for="owner-signup-password">Password</label>
+                        <input type="password" id="owner-signup-password" placeholder="Create a password" required>
+
+                        <label for="owner-signup-password-confirm">Confirm Password</label>
+                        <input type="password" id="owner-signup-password-confirm" placeholder="Confirm your password" required>
+
+                        <button type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-books">
+            <h3>About Our Books</h3>
+            <p>At Book Connect, we offer a wide variety of books, from timeless classics to modern bestsellers. Discover new reads and connect with your favorite local bookstores for personalized recommendations. Whether you're a passionate reader or a bookstore owner, our platform bridges the gap between literature enthusiasts and local businesses.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book Connect. All rights reserved.</p>
+    </footer>
+
+    <script src="roshni.js"></script>
+</body>
+</html>
